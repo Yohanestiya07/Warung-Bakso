@@ -1,0 +1,146 @@
+/* Resetting margin and padding for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9; /* Tambahkan latar belakang untuk kontras */
+}
+
+/* Gaya untuk navbar */
+.navbar {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-between; /* Menyebar elemen secara merata */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    padding: 10px 20px; /* Padding untuk ruang di dalam navbar */
+    background-color: #fff; /* Warna latar belakang navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk navbar */
+    position: relative; /* Memungkinkan penempatan elemen anak */
+    z-index: 1000; /* Menjaga navbar di atas elemen lain */
+}
+
+.navbar a {
+    color: #111; /* Warna teks tautan */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    font-weight: 600; /* Menebalkan teks tautan */
+    padding: 10px 15px; /* Ruang di sekitar teks tautan */
+    font-size: 16px; /* Ukuran font */
+    transition: color 0.3s ease; /* Efek transisi untuk perubahan warna */
+    background-color: red;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    color: #ffb72b; /* Warna saat hover */
+}
+
+.navbar .logo img {
+    width: 120px; /* Ukuran logo */
+    height: auto; /* Menjaga proporsi gambar */
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffb72b;
+    border-radius: 20px;
+    padding: 40px 20px; /* Tambahkan padding */
+    margin: 20px 0; /* Tambahkan margin */
+    text-align: center; /* Pusatkan teks */
+}
+
+.jumbotron h1 {
+    color: white;
+    margin-bottom: 20px; /* Tambahkan margin bawah */
+}
+
+.jumbotron p {
+    color: white;
+    margin-bottom: 30px; /* Tambahkan margin bawah */
+}
+
+/* Card Styling for Categories */
+.cards-categories {
+    display: flex;
+    flex-wrap: wrap; /* Membuat kartu dapat membungkus */
+    justify-content: center; /* Pusatkan kartu */
+    gap: 20px; /* Jarak antar kartu */
+    margin: 20px 0; /* Tambahkan margin atas dan bawah */
+}
+
+.card {
+    background-color: white; /* Latar belakang putih untuk kartu */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 300px; /* Ukuran tetap untuk kartu */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    text-align: center; /* Pusatkan teks judul */
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    background-color: #fff; /* Warna latar belakang footer */
+    padding: 20px; /* Tambahkan padding */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk footer */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        padding: 20px; /* Kurangi padding pada layar kecil */
+    }
+
+    .cards-categories {
+        flex-direction: column; /* Ubah menjadi kolom pada layar kecil */
+        align-items: center; /* Pusatkan kartu */
+    }
+
+    .card {
+        width: 90%; /* Lebar kartu lebih besar pada layar kecil */
+    }
+}
+/* Gaya untuk tombol */
+.btn {
+    background-color: #a0751e; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px 20px; /* Padding untuk ruang di dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol yang dapat diklik */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek transisi */
+}
+
+.btn:hover {
+    background-color: #e0a829; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.btn:focus {
+    outline: none; /* Menghilangkan outline saat tombol difokuskan */
+}

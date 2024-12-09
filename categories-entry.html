@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../assets/icon.png" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/categories.css" /> <!-- Tambahkan file CSS untuk styling -->
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Bakso Admin | Categories Entry</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="img/logo.png" alt="Logo Warung Bakso" width="50" height="25"/> <!-- Logo Warung Bakso -->
+            <span class="logo_name">Warung Bakso</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="../admin.html" class="active">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="../categories/categories.html">
+                    <i class="bx bx-box"></i>
+                    <span class="links_name">Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="../transaction/transaction.html">
+                    <i class="bx bx-list-ul"></i>
+                    <span class="links_name">Transaction</span>
+                </a>
+            </li>
+            <li>
+                <a href="../index.html">
+                    <i class="bx bx-log-out"></i>
+                    <span class="links_name">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class="bx bx-menu sidebarBtn"></i>
+            </div>
+            <div class="profile-details">
+                <img src="img/logo.png" alt="Logo Warung Bakso" width="50" height="50" style="margin-left: 10px;"/> <!-- Tambahkan logo di sini -->
+                <span class="admin_name">Admin Warung Bakso</span>
+            </div>
+        </nav>
+        <div class="home-content">
+            <h3>Input Categories</h3>
+            <div class="form-login">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="categories">Categories</label>
+                    <input class="input" type="text" name="categories" id="categories" placeholder="Categories" required />
+                    
+                    <label for="price">Price</label>
+                    <input class="input" type="text" name="price" id="price" placeholder="Price" required />
+                    
+                    <label for="description">Description</label>
+                    <textarea class="input" name="description" id="description" placeholder="Description" required></textarea>
+                    
+                    <label for="photo">Photo</label>
+                    <input type="file" name="photo" id="photo" style="margin-bottom: 20px" required />
+                    
+                    <button type="submit" class="btn btn-simpan" name="simpan">
+                        Simpan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else {
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+            }
+        };
+    </script>
+</body>
+
+</html>

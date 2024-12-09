@@ -1,0 +1,195 @@
+/* Resetting margin and padding for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9; /* Background color for contrast */
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background: #fff; /* Background color for sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for sidebar */
+    transition: all 0.3s ease; /* Transition for smooth opening/closing */
+    z-index: 1000; /* Keep sidebar above other elements */
+}
+
+.sidebar.active {
+    width: 60px; /* Width when sidebar is collapsed */
+}
+
+.logo-details {
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Padding for logo section */
+}
+.logo-details img {
+    width: 50px; /* Sesuaikan ukuran logo */
+    height: auto; /* Menjaga proporsi gambar */
+    margin-right: 10px; /* Jarak antara logo dan nama */
+}
+
+.logo-details i {
+    font-size: 28px; /* Icon size */
+    color: #ffb72b; /* Icon color */
+}
+
+.logo_name {
+    font-size: 24px; /* Logo name size */
+    color: #333; /* Logo name color */
+    margin-left: 10px; /* Space between icon and name */
+}
+
+.nav-links {
+    margin-top: 20px; /* Space above nav links */
+}
+
+.nav-links li {
+    list-style: none; /* Remove bullet points */
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 15px 20px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Link color */
+    transition: background 0.3s; /* Transition for background color */
+}
+
+.nav-links a:hover {
+    background: #ffb72b; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.nav-links a.active {
+    background: #ffb72b; /* Active link background */
+    color: white; /* Active link text color */
+}
+
+/* Home section styling */
+.home-section {
+    margin-left: 250px; /* Space for sidebar */
+    transition: margin-left 0.3s; /* Transition for smooth margin change */
+}
+
+.home-section.active {
+    margin-left: 60px; /* Margin when sidebar is collapsed */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Padding for nav */
+    background: white; /* Background color for nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for nav */
+}
+
+.sidebar-button {
+    font-size: 28px; /* Size for sidebar button */
+    cursor: pointer; /* Pointer cursor for button */
+}
+
+.profile-details {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.admin_name {
+    margin-left: 10px; /* Space between icon and name */
+    font-size: 18px; /* Font size for admin name */
+}
+
+/* Home content styling */
+.home-content {
+    padding: 20px; /* Padding for home content */
+}
+
+.home-content h1 {
+    font-size: 24px; /* Font size for heading */
+    color: #333; /* Color for heading */
+}
+
+.home-content p {
+    font-size: 16px; /* Font size for paragraph */
+    color: #666; /* Color for paragraph */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Adjust sidebar width for smaller screens */
+    }
+
+    .home-section {
+        margin-left: 200px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Gaya untuk form login dan register */
+.form-login, .form-register {
+    background-color: #fff; /* Latar belakang putih untuk form */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk form */
+    padding: 20px; /* Padding di dalam form */
+    max-width: 400px; /* Lebar maksimum form */
+    margin: 20px auto; /* Margin untuk pusatkan form */
+}
+
+/* Gaya untuk judul form */
+.form-login h3, .form-register h3 {
+    text-align: center; /* Pusatkan teks judul */
+    margin-bottom: 20px; /* Margin bawah untuk jarak */
+    color: #333; /* Warna teks judul */
+}
+
+/* Gaya untuk input */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%; /* Lebar penuh */
+    padding: 5px; /* Padding di dalam input */
+    margin: 10px 0; /* Margin atas dan bawah */
+    border: 1px solid #ccc; /* Border abu-abu */
+    border-radius: 5px; /* Sudut membulat */
+    font-size: 16px; /* Ukuran font */
+}
+
+/* Gaya untuk tombol submit */
+button[type="submit"] {
+    background-color: #ffb72b; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px; /* Padding di dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol yang dapat diklik */
+    transition: background-color 0.3s ease; /* Efek transisi */
+    width: 100%; /* Lebar penuh */
+}
+
+button[type="submit"]:hover {
+    background-color: #e0a829; /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk tautan ke halaman lain */
+.form-login p, .form-register p {
+    text-align: center; /* Pusatkan teks */
+    margin-top: 15px; /* Margin atas untuk jarak */
+}
+
+.form-login a, .form-register a {
+    color: #ffb72b; /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+
+.form-login a:hover, .form-register a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}

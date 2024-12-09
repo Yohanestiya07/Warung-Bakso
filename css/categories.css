@@ -1,0 +1,260 @@
+/* Resetting margin and padding for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9; /* Background color for contrast */
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background: #fff; /* Background color for sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for sidebar */
+    transition: all 0.3s ease; /* Transition for smooth opening/closing */
+    z-index: 1000; /* Keep sidebar above other elements */
+}
+
+.nav-links {
+    margin-top: 20px; /* Space above nav links */
+}
+
+.nav-links li {
+    list-style: none; /* Remove bullet points */
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 15px 20px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Link color */
+    transition: background 0.3s; /* Transition for background color */
+}
+
+.nav-links a:hover {
+    background: #ffb72b; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Home section styling */
+.home-section {
+    margin-left: 250px; /* Space for sidebar */
+    transition: margin-left 0.3s; /* Transition for smooth margin change */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Padding for nav */
+    background: white; /* Background color for nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for nav */
+}
+
+/* Home content styling */
+.home-content {
+    padding: 20px; /* Padding for home content */
+}
+
+.home-content h3 {
+    font-size: 24px; /* Font size for heading */
+    color: #333; /* Color for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Button styling */
+.btn {
+    background-color: #ffb72b; /* Background color for button */
+    color: white; /* Text color for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 16px; /* Font size for button */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.btn:hover {
+    background-color: #e0a829; /* Darker background on hover */
+}
+
+/* Table styling */
+.table-data {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above table */
+}
+
+.table-data th, .table-data td {
+    padding: 15px; /* Padding for cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Bottom border for cells */
+}
+
+.table-data th {
+    background-color: #f2f2f2; /* Background color for header */
+    color: #333; /* Text color for header */
+    font-weight: bold;/* teks tebal untuk header*/
+}
+
+.table-data td {
+    background-color: #fff; /* Warna latar belakang untuk sel */
+    color: #555; /* Warna teks untuk sel */
+}
+
+.table-data tr:hover {
+    background-color: #f5f5f5; /* Background color on row hover */
+}
+
+.btn-edit, .btn-delete {
+    background-color: #007BFF; /* Warna latar belakang tombol edit */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 8px 12px; /* Padding untuk ruang di dalam tombol */
+    font-size: 14px; /* Ukuran font */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol yang dapat diklik */
+    transition: background-color 0.3s ease; /* Efek transisi */
+    margin-right: 5px; /* Jarak antara tombol */
+}
+
+.btn-edit:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover untuk tombol edit */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Warna latar belakang tombol hapus */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Warna latar belakang saat hover untuk tombol hapus */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Adjust sidebar width for smaller screens */
+    }
+
+    .home-section {
+        margin-left: 200px; /* Adjust margin for smaller screens */
+    }
+
+    .table-data th, .table-data td {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+.profile-details {
+    display: flex; /* Menggunakan flexbox untuk menyelaraskan item */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+.profile-details img {
+    width: 40px; /* Sesuaikan ukuran logo */
+    height: auto; /* Menjaga proporsi gambar */
+    margin-left: 10px; /* Jarak antara teks dan logo */
+}
+
+.admin_name {
+    font-size: 18px; /* Ukuran font untuk nama admin */
+    color: #333; /* Warna teks */
+}
+.logo-details {
+    display: flex; /* Menggunakan flexbox untuk menyelaraskan item */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+.logo-details img {
+    width: 50px; /* Sesuaikan ukuran logo */
+    height: auto; /* Menjaga proporsi gambar */
+    margin-right: 10px; /* Jarak antara logo dan nama */
+}
+
+.logo_name {
+    font-size: 24px; /* Ukuran font untuk nama warung */
+    color: #333; /* Warna teks */
+    line-height: 25px; /* Menyesuaikan tinggi garis untuk penyelarasan vertikal */
+}
+.btn-tambah {
+    background-color: #4CAF50; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px 20px; /* Padding untuk ruang di dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol yang dapat diklik */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek transisi */
+    margin-bottom: 20px; /* Jarak bawah untuk pemisahan dari elemen lain */
+}
+
+.btn-tambah:hover {
+    background-color: #45a049; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.btn-tambah a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: white; /* Warna teks tautan */
+}
+
+/* Gaya untuk form input */
+.form-login {
+    background-color: #f9f9f9; /* Warna latar belakang form */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk form */
+    padding: 20px; /* Padding di dalam form */
+    max-width: 400px; /* Lebar maksimum form */
+    margin: 20px auto; /* Margin untuk pusatkan form */
+}
+
+.form-login h3 {
+    text-align: center; /* Pusatkan judul */
+    margin-bottom: 20px; /* Jarak bawah untuk judul */
+    color: #333; /* Warna teks judul */
+}
+
+.form-login label {
+    font-size: 14px; /* Ukuran font untuk label */
+    margin-bottom: 5px; /* Jarak bawah untuk label */
+    display: block; /* Membuat label menjadi block untuk memudahkan penataan */
+    color: #555; /* Warna teks label */
+}
+
+.input {
+    width: 100%; /* Lebar penuh untuk input */
+    padding: 10px; /* Padding di dalam input */
+    margin-bottom: 15px; /* Jarak bawah untuk input */
+    border: 1px solid #ccc; /* Border untuk input */
+    border-radius: 5px; /* Sudut membulat untuk input */
+    font-size: 14px; /* Ukuran font untuk input */
+    box-sizing: border-box; /* Menghitung padding dan border dalam lebar total */
+}
+
+.input:focus {
+    border-color: #007BFF; /* Warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+.btn-simpan {
+    background-color: #007BFF; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px 15px; /* Padding untuk ruang di dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol yang dapat diklik */
+    transition: background-color 0.3s ease; /* Efek transisi */
+    width: 100%; /* Lebar penuh untuk tombol */
+}
+
+.btn-simpan:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+}

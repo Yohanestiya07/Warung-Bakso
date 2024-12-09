@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../assets/icon.png" />
+    <link rel="stylesheet" href="css/categories.css" />
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Bakso Admin | Categories</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="img/logo.png" alt="Logo Warung Bakso" width="50" height="25"/> <!-- Logo baru di sini -->
+            <span class="logo_name">Warung Bakso</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="../admin.html" class="active">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="../categories/categories.html">
+                    <i class="bx bx-box"></i>
+                    <span class="links_name">Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="../transaction/transaction.html">
+                    <i class="bx bx-list-ul"></i>
+                    <span class="links_name">Transaction</span>
+                </a>
+            </li>
+            <li>
+                <a href="../index.html">
+                    <i class="bx bx-log-out"></i>
+                    <span class="links_name">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class="bx bx-menu sidebarBtn"></i>
+            </div>
+            <div class="profile-details">
+                <img src="img/logo.png" alt="Logo Warung Bakso" width="50" height="50" style="margin-left: 10px;"/> <!-- Tambahkan logo di sini -->
+                <span class="admin_name">Admin Warung Bakso</span>
+               </div>
+        </nav>
+        <div class="home-content">
+            <h3>Categories</h3>
+            <button type="button" class="btn btn-tambah">
+                <a href="categories-entry.html">Tambah Data</a>
+            </button>
+            <table class="table-data">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 20%">Photo</th>
+                        <th>Categories</th>
+                        <th scope="col" style="width: 20%">Description</th>
+                        <th scope="col" style="width: 15%">Price</th>
+                        <th scope="col" style="width: 30%">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/bakso sapi.png" alt="Bakso Sapi" width="300" height="200"/></td>
+                        <td>Bakso Sapi</td>
+                        <td>Bakso sapi adalah salah satu jenis bakso yang terbuat dari daging sapi yang berkualitas.</td>
+                        <td>30,000</td>
+                        <td>
+                            <button class="btn-edit" onclick="editCategory()">Edit</button>
+                            <button class="btn-delete" onclick="deleteCategory()">Hapus</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/bakso ayam.png" alt="Bakso Ayam" width="300" height="200"/></td>
+                        <td>Bakso Ayam</td>
+                        <td>Bakso ayam terbuat dari daging ayam yang lembut dan nikmat.</td>
+                        <td>25,000</td>
+                        <td>
+                            <button class="btn-edit" onclick="editCategory()">Edit</button>
+                            <button class="btn-delete" onclick="deleteCategory()">Hapus</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/bakso keju.png" alt="Bakso Keju"width="300" height="200" /></td>
+                        <td>Bakso Keju</td>
+                        <td>Bakso keju adalah bakso yang diisi dengan keju leleh yang menggoda.</td>
+                        <td>35,000</td>
+                        <td>
+                            <button class="btn-edit" onclick="editCategory()">Edit</button>
+                            <button class="btn-delete" onclick="deleteCategory()">Hapus</button>
+                        </td>
